@@ -3,8 +3,9 @@ layout: default
 title:  "Welcome to Jekyll!"
 ---
 
-# Exammple post
+# Example post
 
 First blog post,
 
-![example image](/img/github-entry-settings-4.png)
+* test 1: ![example image]({{ site.baseurl }}/img/github-entry-settings-4.png)
+* test 2: ![example image]({{ site.baseurl }}img/github-entry-settings-4.png)

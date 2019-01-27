@@ -3,9 +3,9 @@ layout: default
 title:  "GitHub Pages - test"
 ---
 
-# Start
+# Jak readme zamienić na stronę serwowaną przez GitHub Pages?
 
-Cześć! To jest test Github Pages, zastanawiam się czy można to w prostym zakresie wykorzystać jako platforma mini blogowa. Szczególnie jestem zainteresowany możliwością wstawiania sformatowanego kodu źródłowego w różnych językach oraz screenshotów.
+Zastanawiam się czy można w prostym zakresie wykorzystać GitHub Pages jako platforma mini blogowa. Szczególnie jestem zainteresowany możliwością wstawiania sformatowanego kodu źródłowego w różnych językach oraz screenshotów.
 
 No to do dzieła! Założyłem, że chcę publikować pliki *.md, nie czytałem dokumentacji, ale zakładam, że jest to możliwe. O moich doświadczeniach przeczytacie w dalszej części.
 
