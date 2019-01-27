@@ -2,7 +2,7 @@
 
 Cześć! To jest test Github Pages, zastanawiam się czy można to w prostym zakresie wykorzystać jako platforma mini blogowa. Szczególnie jestem zainteresowany możliwością wstawiania sformatowanego kodu źródłowego w różnych językach oraz screenshotów.
 
-No to do dzieła! Założyłem, że chcę publikować pliki *.md, nie czytałem dokumentacji, ale zakładam, że jest to możliwe. O moich doświadczeniach przeczytacie w dalszej części
+No to do dzieła! Założyłem, że chcę publikować pliki *.md, nie czytałem dokumentacji, ale zakładam, że jest to możliwe. O moich doświadczeniach przeczytacie w dalszej części.
 
 ## Jak edytować pliki md?
 
@@ -17,9 +17,9 @@ Narzędzie open source lecz nie oznacza to, że jest darmowe. Za darmo dostaje s
 
 ![Markdown Monster](img/mm.png)
 
-## Porównanie
+### Porównanie
 
-### Formatowanie
+#### Formatowanie
 
 Przykładowy kod yaml:
 ```yml
@@ -76,19 +76,19 @@ install-deps:
 ![](img/vsc-yaml.png)
 
 
-### Podgląd dokuemntu
+#### Podgląd dokuemntu
 * **vsc**: Cały kod pokazywany jest na żywo w trakcie pisania. Na podglądzie zawsze mamy zaznaczony pionową kreską paragraf, który edytujemy
 * **mm**: Podgląd aktualizuje się z pewnymi interwałami, czasami przestaje się aktualizować, szczególnie gdy mamy błąd w składni to nawet gdy ten błąd poprawimy to juz widok pozostaje taki sam do czasu aż nie zmienimy paragrafu
 
-### Outline
+#### Outline
 
 @TODO
 
-### Nawigacja pomiędzy zlinkowanymi dokumentami
+#### Nawigacja pomiędzy zlinkowanymi dokumentami
 
 @TODO
 
-### Tabelki
+#### Tabelki
 
 Przykład kodu tabelki:
 
@@ -106,11 +106,11 @@ Przykład kodu tabelki:
 **VSC** Tabelka:
 ![](img/vsc-table.png)
 
-### Obrazki
+#### Obrazki
 
 Obydwa edytory dobrze wyświetlają obrazki ale to co jest zdecydowanie na plus dla MM to obsługa wklejania obrazków ze schowka, CTRL+V i pokazuje się dialog, w którym wskazujemy lokalizację i nazwę pliku (png, jpg, gif). Czegoś takiego właśnie szukałęm! Jest też możliwość przenoszenia obrazków z eksploratora bezpośregnio do dokumentu.
 
-## Ostateczne podsumowanie
+### Ostateczne podsumowanie
 
 Poniżej wskażę funkcjonalności, które wykorzystuję edytując pliki *.md. Skupię się głównie na tych, które w znaczny sposób się różnią pomiędzy edytorami:
 
@@ -123,14 +123,37 @@ Poniżej wskażę funkcjonalności, które wykorzystuję edytując pliki *.md. S
 | Formatowanie cytowanych kodów źródłowych | tak | nie zawsze czytelne |
 | Wybór renderer-a | nie | tak, wiele różnych platform, np github, medium itd |
 | Obsługa wstawiania zdjęć | nie | tak, ze schowka, pliku, drag & drop |
-| Formatowanie za pomocą skrótów CTRL+B, CTRL+I itd | nie, wymaga zainstalowania rozszerzenia
+| Formatowanie za pomocą skrótów CTRL+B, CTRL+I itd | nie, wymaga zainstalowania rozszerzenia | tak |
 | Zmiana ścieżek do obrazków przy przy zmianie nazwy obrazka | nie | nie |
 | Krytyczne bugi | nie zauważyłem | tak, np. zawieszenie aplikacji przy nawigacji po folderach, gubienie plików po drag & drop |
 
 Ostatecznie z MM będę korzystał chyba wyłącznie do łatwego wklejania zrzutów ekranów a przy codziennej pracy znacznie pewniejszym narzędziem jest VSC.
+
+## Jak opublikować GitHub Pages
+
+Strony, które chcecie opublikować będą dostępne pod adresem `https://[user name].github.io/[repository name]/`. Aby aktywować GitHub Pages należy wykonać parę kroków. Oczywiście minimalne wymagania to konto na githubie i minimalne pojęcie jak korzystać z `git-a`.
+
+### Publikacja plików *.md
+
+Oczywiście rozpoczynamy od pusha pliku `README.md` na nasze repozytorium. Plik ten musi się znajdować w jednej z lokalizacji:
+* folder `/` na branch-u `master`
+* folder `/docs` na branch-u `master`
+* folder `/` na branch-u `gh-pages`
+
+Oczywiście jeżeli ktoś chce to może umieścić pliki inne niż *.md. Np `index.html`, w którym mamy znacznie większe możliwości ale nie to jest celem tego artukułu - skupiamy się na plikach md, md i jeszcze raz md :)
+
+### Konfiguracja repozytorium github
+
+* wchodzimy w konfigurację repozytorium: `settings/options/GitHub Pages`
+![](img/github-entry-settings.png)
+![](img/github-entry-settings-2.png)
+![](img/github-entry-settings-3.png)
+* `Source` wskazujemy na rozwijanej liście lokalizacje naszego pliku `md`. Akceptujemy za pomoca `Save` i już po paru chwilach mamy opublikowaną stronę
+![](img/github-entry-settings-4.png)
 
 Przydatne linki:
 * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Markdown Monster](https://markdownmonster.west-wind.com/)
 * [Visual Studio Code - markdown support](https://code.visualstudio.com/docs/languages/markdown)
 * [Visual Studio Code - markdown shortcuts extension](https://marketplace.visualstudio.com/items?itemName=mdickin.markdown-shortcuts)
+
