@@ -3,8 +3,7 @@ layout: default
 ---
 
 {% for post in site.posts %}
-
-{{ post.date }} - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+{{ post.date | date: "%m/%d/%Y" }} - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
 
 > {{ post.excerpt }}
 
