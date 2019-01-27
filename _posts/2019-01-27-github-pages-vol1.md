@@ -1,6 +1,7 @@
 ---
 layout: default
-title:  "GitHub Pages - test"
+title:  "Test GitHub Pages - #1"
+permalink: "/posts/github-pages-test-vol1"
 ---
 
 # Jak readme zamienić na stronę serwowaną przez GitHub Pages?
@@ -15,12 +16,12 @@ Zanim opublikujemy pliki `*.md` musimy je stworzyć. Oczywiście tutaj nie ma wi
 
 ### Visual Studio Code
 Szeroko stosowany edytor kodu, więc nie trzeba dodatkowych, zewnętrznych narzędzi, obłsuga plików *.md jest natywna tzn nie musimy instalować dodatkowych rozszerzeń.
-![Visual Studio Code](img/vsc.png)
+![Visual Studio Code](../img/vsc.png)
 
 ### Markdown Monster
 Narzędzie open source lecz nie oznacza to, że jest darmowe. Za darmo dostaje się wyłącznie wersję trial. Jest to specjalizowany kombajn obsługujący tworzenie, konwersje jak również wdrożenia.
 
-![Markdown Monster](img/mm.png)
+![Markdown Monster](../img/mm.png)
 
 ### Porównanie
 
@@ -75,10 +76,10 @@ install-deps:
 ```
 
 **MM**: Podgląd jest dobrej jakości ale samo formatowanie kodu słabiutkie:
-![](img/mm-yaml.png)
+![](../img/mm-yaml.png)
 
 **VSC**: Dobrej jakości formatowanie i podgląd:
-![](img/vsc-yaml.png)
+![](../img/vsc-yaml.png)
 
 
 #### Podgląd dokuemntu
@@ -106,10 +107,10 @@ Przykład kodu tabelki:
 ```
 
 **MM** Tabelka:
-![](img/mm-table.png)
+![](../img/mm-table.png)
 
 **VSC** Tabelka:
-![](img/vsc-table.png)
+![](../img/vsc-table.png)
 
 #### Obrazki
 
@@ -150,11 +151,11 @@ Oczywiście jeżeli ktoś chce to może umieścić pliki inne niż *.md. Np `ind
 ### Konfiguracja repozytorium github
 
 * wchodzimy w konfigurację repozytorium: `settings/options/GitHub Pages`
-![](img/github-entry-settings.png)
-![](img/github-entry-settings-2.png)
-![](img/github-entry-settings-3.png)
+![](../img/github-entry-settings.png)
+![](../img/github-entry-settings-2.png)
+![](../img/github-entry-settings-3.png)
 * `Source` wskazujemy na rozwijanej liście lokalizacje naszego pliku `md`. Akceptujemy za pomoca `Save` i już po paru chwilach mamy opublikowaną stronę
-![](img/github-entry-settings-4.png)
+![](../img/github-entry-settings-4.png)
 
 Przydatne linki:
 * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
