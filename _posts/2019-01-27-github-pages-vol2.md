@@ -34,6 +34,8 @@ Eksperymantalnie doszedłem do tego, że aby zarówno w edytorze jak i na stroni
 Posty już mamy na repo ale nadal nie widać ich na naszej stronie? Jedyne co widzimy to ładnie sformatowany plik readme, który stworzyliśmy w poprzednim artykule.
 
 Aby pokazać nasze posty musimy utworzyc dokument strony głównej. Musi to być plik `index.md` (lub `.html`) i wypełniamy go używając silnika szablonó [liquid](https://jekyllrb.com/docs/step-by-step/02-liquid/). Tak jak przy poście musimy mieć nagłówek, następnie iterujemy po wszystkich postach i wyświetlami linka z url-em:
+
+{% raw %}
 ```
 ---
 layout: default
@@ -42,8 +44,13 @@ layout: default
 {% for post in site.posts %}
 ## {{ post.date | date: "%Y-%m-%d" }} - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
 
-### {{ post.excerpt }}
-
+### {{ post.excerpt | strip_html }}
 ---
 {% endfor %}
 ```
+{% endraw %}
+Jest tutaj trochę magii z formatowaniem, nie wygląda to czytelnie ale robimy to tylko raz.
+
+
+Przydatne linki:
+* [Jekyll cheatsheet](https://devhints.io/jekyll)
