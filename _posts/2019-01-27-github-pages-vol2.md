@@ -4,7 +4,7 @@ title:  "Test GitHub Pages - #2"
 permalink: "/posts/github-pages-test-vol2"
 ---
 
-# Jak z Github Pages zrobic plaformę blogową
+# Jak z Github Pages zrobić plaformę blogową
 
 Ok, w poprzednim poście udało nam się stworzyć readme i go opublikować. Ale pojedynczy plik to jeszcze nie platforma blogowa. Tutaj z pomocą przychodzi system [Jekyll](https://jekyllrb.com/). Jest to generator stron opierający się o pliki tekstowe (takie jak *.md). Na Jekyll-u jest zbudowany cały Guthub Pages. To znaczy, że już mamy plaformę i wystarczy ją dokonfigurować.
 
@@ -52,5 +52,5 @@ layout: default
 Jest tutaj trochę magii z formatowaniem, nie wygląda to czytelnie ale robimy to tylko raz.
 
 
-Przydatne linki:
+## Przydatne linki:
 * [Jekyll cheatsheet](https://devhints.io/jekyll)
